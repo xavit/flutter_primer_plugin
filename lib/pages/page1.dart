@@ -19,7 +19,7 @@ class Page1 extends StatelessWidget {
           ),
           onPressed: () {
             //Mi companente
-            RouteTransitions(
+            PageTransitionEffects(
               context: context,
               page: const Page2(),
               animation: AnimationType.slideRight,

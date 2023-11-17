@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 enum AnimationType { normal, fadeIn, slideUp, slideDown, slideLeft, slideRight }
 
-class RouteTransitions {
+class PageTransitionEffects {
   final BuildContext context;
   final Widget page;
   final AnimationType animation;
   final Duration duration;
   final bool replacement;
 
-  RouteTransitions({
+  PageTransitionEffects({
     required this.context,
     required this.page,
     this.animation = AnimationType.normal,
