@@ -4,11 +4,17 @@ class Page2 extends StatelessWidget {
   const Page2({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.blueGrey,
-      body: Center(
-        child: Text('Page2 UI'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Page 2'),
+        backgroundColor: Colors.transparent,
       ),
+      backgroundColor: Colors.blueGrey,
+      body: const Center(
+          child: Text(
+        'Page2 UI',
+        style: TextStyle(color: Colors.yellow, fontSize: 30),
+      )),
     );
   }
 }
